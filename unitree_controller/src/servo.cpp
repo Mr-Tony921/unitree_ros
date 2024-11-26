@@ -241,8 +241,10 @@ int main(int argc, char **argv)
         control logic
         */
         lowState_pub.publish(lowState);
-        sendServoCmd();
-
+        // sendServoCmd();
+        squat();
+        // hi5();
+        stand();
     }
     return 0;
 }
