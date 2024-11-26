@@ -44,6 +44,25 @@ void stand()
     moveAllPosition(pos, 2*1000);
 }
 
+void squat()
+{
+    double pos[12] = {-0.01, 0.56, -1.25, -0.01, 0.56, -1.25, 
+                      -0.07, 0.55, -1.25, -0.07, 0.55, -1.25};
+    moveAllPosition(pos, 0.5*1000);
+}
+
+void hi5()
+{
+    double pos_1[12] = {0.0, 0.67, -1.3, -0.0, 0.67, -1.3, 
+                        0.0, 0.67, -1.3, -0.0, 0.67, -1.3};
+    double pos_2[12] = {0.0, -1.06, -1.12, 0.0, -1.06, -1.12, 
+                        0.0, 0.6, -1.2, 0.0, 0.6, -1.2};
+    for (auto i = 0; i < 5; ++i) {
+        moveAllPosition(pos_1, 0.5*1000);
+        moveAllPosition(pos_2, 0.5*1000);
+    }
+}
+
 void motion_init()
 {
     paramInit();
